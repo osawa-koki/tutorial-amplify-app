@@ -34,5 +34,9 @@ jobs:
         run: yarn install --frozen-lockfile --non-interactive --production
       - name: Setup Amplify
         run: amplify pull --appId ${{ secrets.AMPLIFY_APP_ID }} --envName prod --yes
+      - name: Amplify checkout
+        run: amplify env checkout prod
+      - name: Push
+        run: amplify push --yes
       - name: Publish
         run: amplify publish --yes
