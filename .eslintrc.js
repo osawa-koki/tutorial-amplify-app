@@ -21,6 +21,8 @@ module.exports = {
   ],
   ignorePatterns: [
     '.next',
+    'out',
+    'amplify',
     'node_modules',
     'build',
     'dist',
