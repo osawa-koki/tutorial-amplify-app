@@ -1,0 +1,44 @@
+amplify publish
+✔ Successfully pulled backend environment prod from the cloud.
+
+    Current Environment: prod
+
+┌──────────┬────────────────┬───────────┬───────────────────┐
+│ Category │ Resource name  │ Operation │ Provider plugin   │
+├──────────┼────────────────┼───────────┼───────────────────┤
+│ Hosting  │ amplifyhosting │ No Change │ awscloudformation │
+└──────────┴────────────────┴───────────┴───────────────────┘
+
+No changes detected
+
+? Do you still want to publish the frontend? Yes
+Publish started for amplifyhosting
+yarn run v1.22.19
+$ next build
+   Linting and checking validity of types  ..Warning: React version not specified in eslint-plugin-react settings. See https://github.com/jsx-eslint/eslint-plugin-react#configuration .
+ ✓ Linting and checking validity of types
+   ▲ Next.js 14.0.2
+
+ ✓ Creating an optimized production build
+ ✓ Compiled successfully
+ ✓ Collecting page data
+ ✓ Generating static pages (3/3)
+ ✓ Finalizing page optimization
+
+Route (pages)                              Size     First Load JS
+┌ ○ /                                      4.23 kB        88.1 kB
+├   /_app                                  0 B            83.9 kB
+└ ○ /404                                   182 B            84 kB
++ First Load JS shared by all              116 kB
+  ├ chunks/framework-66d32731bdd20e83.js   45.2 kB
+  ├ chunks/main-796f7e1f833f7a03.js        31.7 kB
+  ├ chunks/pages/_app-e8767a813dfe7852.js  6.08 kB
+  ├ chunks/webpack-ee7e63bc15b31913.js     815 B
+  └ css/7ae90fff829f3966.css               32.2 kB
+
+○  (Static)  prerendered as static content
+
+✨  Done in 11.98s.
+✔ Zipping artifacts completed.
+✔ Deployment complete!
+https://prod.d3ry9n8m1a07v.amplifyapp.com
