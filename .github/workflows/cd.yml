@@ -32,5 +32,7 @@ jobs:
       - name: Install dependencies
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile --non-interactive --production
+      - name: Setup Amplify
+        run: amplify pull --appId ${{ secrets.AMPLIFY_APP_ID }} --envName prod --yes
       - name: Publish
         run: amplify publish --yes
